@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Henien – Developer Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .app-card h2 {
+            margin-top: 0;
+            font-size: 28px;
+            color: #2c3e50;
+        }
+
+        a {
+            color: #007aff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Paul Henien</h1>
+    <p>iOS Developer • Creator of Sunday School Manager</p>
+</header>
+
+<div class="container">
+
+    <!-- App Section -->
+    <div class="app-card">
+        <h2>📘 Sunday School Manager</h2>
+        <p>Manage classes, teachers, attendance, communication, and more — designed specifically for Sunday Schools.</p>
+
+        <p><strong>App Store:</strong><br>
+            <a href="https://apps.apple.com/us/app/sunday-school-manager/id6755734036" target="_blank">
+                Download on the App Store
+            </a>
+        </p>
+
+        <p><strong>Support Website:</strong><br>
+            <a href="https://phenien.github.io/SSmanager-support/" target="_blank">
+                https://phenien.github.io/SSmanager-support/
+            </a>
+        </p>
+
+        <p><strong>Privacy Policy:</strong><br>
+            <a href="https://phenien.github.io/SSmanager-support/privacy.html" target="_blank">
+                View Privacy Policy
+            </a>
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    &copy; <span id="year"></span> Paul Henien. All Rights Reserved.
+</footer>
+
+<script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
