@@ -38,6 +38,13 @@
             padding: 25px;
             margin-bottom: 25px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .app-info {
+            flex: 1;
         }
 
         .app-card h2 {
@@ -62,6 +69,30 @@
             font-size: 14px;
             color: #666;
         }
+
+        /* App icon styling */
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 28%; /* App Store–style rounded corners */
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .app-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 
@@ -69,33 +100,39 @@
 
 <header>
     <h1>Paul Henien</h1>
-    <p>iOS Developer • Creator of Sunday School Manager</p>
+    <p>iOS Developer</p>
 </header>
 
 <div class="container">
 
     <!-- App Section -->
     <div class="app-card">
-        <h2>📘 Sunday School Manager</h2>
-        <p>Manage classes, teachers, attendance, communication, and more — designed specifically for Sunday Schools.</p>
+        <div class="app-icon">
+            <img src="https://phenien.github.io/SSManager.png" alt="Sunday School Manager icon">
+        </div>
 
-        <p><strong>App Store:</strong><br>
-            <a href="https://apps.apple.com/us/app/sunday-school-manager/id6755734036" target="_blank">
-                Download on the App Store
-            </a>
-        </p>
+        <div class="app-info">
+            <h2>📘 Sunday School Manager</h2>
+            <p>Manage classes, teachers, attendance, communication, and more — designed specifically for Sunday Schools.</p>
 
-        <p><strong>Support Website:</strong><br>
-            <a href="https://phenien.github.io/SSmanager-support/" target="_blank">
-                https://phenien.github.io/SSmanager-support/
-            </a>
-        </p>
+            <p><strong>App Store:</strong><br>
+                <a href="https://apps.apple.com/us/app/sunday-school-manager/id6755734036" target="_blank">
+                    Download on the App Store
+                </a>
+            </p>
 
-        <p><strong>Privacy Policy:</strong><br>
-            <a href="https://phenien.github.io/SSmanager-support/privacy.html" target="_blank">
-                View Privacy Policy
-            </a>
-        </p>
+            <p><strong>Support Website:</strong><br>
+                <a href="https://phenien.github.io/SSmanager-support/" target="_blank">
+                    https://phenien.github.io/SSmanager-support/
+                </a>
+            </p>
+
+            <p><strong>Privacy Policy:</strong><br>
+                <a href="https://phenien.github.io/SSmanager-support/privacy.html" target="_blank">
+                    View Privacy Policy
+                </a>
+            </p>
+        </div>
     </div>
 
 </div>
