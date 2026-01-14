@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SSmanager - Professional Sunday School Management App for iOS. Manage classes, track attendance, and engage students with ease.">
+    <meta name="keywords" content="Sunday School, Church Management, Attendance Tracking, iOS App, Education">
+    <meta name="author" content="SSmanager">
+    <title>SSmanager - Sunday School Management Made Easy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 16px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 60px;
+            color: #333;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Roles Section */
+        .roles {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .roles h2 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 60px;
+        }
+
+        .role-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .role-card {
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .role-card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .role-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .role-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .role-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        /* Premium Section */
+        .premium {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .premium h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .premium-price {
+            font-size: 64px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 30px 0;
+        }
+
+        .premium-features {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .premium-features li {
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+
+        .contact p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 24px;
+            padding: 15px 30px;
+            border: 2px solid white;
+            border-radius: 30px;
+            display: inline-block;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .contact a:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .features h2,
+            .roles h2,
+            .premium h2,
+            .contact h2 {
+                font-size: 32px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">📚 SSmanager</div>
+                <nav>
+                    <a href="#features">Features</a>
+                    <a href="#roles">Roles</a>
+                    <a href="#premium">Premium</a>
+                    <a href="#contact">Contact</a>
+                    <a href="privacy.html">Privacy</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Sunday School Management Made Easy</h1>
+            <p>Track attendance, manage classes, and engage students with our powerful iOS app</p>
+            <a href="#" class="cta-button">Download on the App Store</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Powerful Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Attendance Tracking</h3>
+                    <p>Easily mark student attendance with Present, Absent, or Excused statuses. View attendance history and generate reports.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Class Management</h3>
+                    <p>Create and manage multiple classes with custom colors. Assign teachers and track student enrollment effortlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Lesson Planning</h3>
+                    <p>Schedule lessons, record topics, and track scriptures. Keep your curriculum organized and accessible.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Insights & Analytics</h3>
+                    <p>View attendance trends, class performance, and student engagement with beautiful charts and graphs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Offline Mode</h3>
+                    <p>Works without internet! All data syncs automatically when you're back online. Never lose your work.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Smart Notifications</h3>
+                    <p>Get reminders for upcoming lessons, student birthdays, and attendance tasks. Stay organized effortlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h3>Export & Share</h3>
+                    <p>Export attendance reports, class lists, and insights as PDF or CSV. Share with parents and administrators.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Your data is encrypted and secure. Role-based access ensures only authorized users can view sensitive information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful Design</h3>
+                    <p>Modern, colorful interface with dark mode support. Intuitive design makes managing your Sunday School a joy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roles Section -->
+    <section class="roles" id="roles">
+        <div class="container">
+            <h2>Built for Every Role</h2>
+            <div class="role-grid">
+                <div class="role-card">
+                    <h3>👑 Admin</h3>
+                    <ul>
+                        <li>Full access to all features</li>
+                        <li>Manage classes and students</li>
+                        <li>Create and assign teachers</li>
+                        <li>View comprehensive analytics</li>
+                        <li>Export all data</li>
+                        <li>Configure app settings</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <h3>👨‍🏫 Teacher</h3>
+                    <ul>
+                        <li>Manage assigned classes</li>
+                        <li>Mark student attendance</li>
+                        <li>Edit and create lessons</li>
+                        <li>View class insights</li>
+                        <li>Export class reports</li>
+                        <li>Manage student information</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <h3>👀 Viewer</h3>
+                    <ul>
+                        <li>View all classes and students</li>
+                        <li>Access attendance records</li>
+                        <li>View lesson schedules</li>
+                        <li>See analytics and insights</li>
+                        <li>Export reports</li>
+                        <li>Read-only access (no editing)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section class="premium" id="premium">
+        <div class="container">
+            <h2>Go Premium</h2>
+            <p>Remove ads and support development</p>
+            <div class="premium-price">£3.99</div>
+            <p style="color: #666; margin-bottom: 40px;">One-time purchase • Works on all your devices</p>
+            <div class="premium-features">
+                <ul style="list-style: none;">
+                    <li>✓ Ad-free experience</li>
+                    <li>✓ Cleaner interface</li>
+                    <li>✓ Support ongoing development</li>
+                    <li>✓ One-time payment (not a subscription)</li>
+                    <li>✓ Works across all your Apple devices</li>
+                    <li>✓ Family Sharing compatible</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have questions or need support?</p>
+            <a href="mailto:smassservice@gmail.com">smassservice@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SSmanager. All rights reserved.</p>
+            <p style="margin-top: 15px;">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#contact">Support</a>
+                <a href="mailto:smassservice@gmail.com">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
