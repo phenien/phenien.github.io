@@ -1,4 +1,4 @@
-# SSmanager-support
+# SSmanager
 
 Support website for SSmanager iOS app - Sunday School Management Made Easy.
 
@@ -9,4 +9,4 @@ Support website for SSmanager iOS app - Sunday School Management Made Easy.
 
 ## Access
 
-This site is hosted at: https://phenien.github.io/ssmanager-support/
+This site is hosted at: https://phenien.github.io/ssmanager/
