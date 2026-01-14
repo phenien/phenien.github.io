@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CopticLife - Your spiritual companion for Coptic Orthodox Christian life, prayers, and community">
-    <meta name="keywords" content="Coptic, Orthodox, Christianity, Prayers, Church, Liturgy, Synaxarium">
-    <meta name="author" content="CopticLife Team">
-    <title>CopticLife - Coptic Orthodox Spiritual Resources</title>
+    <meta name="description" content="CopticLife - Complete Coptic Orthodox companion app with Agpeya prayers, liturgical calendar, fasting guide, and Bible reading plans. Free on iOS.">
+    <meta name="keywords" content="Coptic, Orthodox, Agpeya, Prayer, Fasting, Calendar, Bible, Church, iOS, iPhone, iPad">
+    <meta name="author" content="CopticLife">
+    <title>CopticLife - Coptic Orthodox Companion App</title>
     <style>
         * {
             margin: 0;
@@ -15,14 +15,14 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #f4f4f4;
         }
 
         header {
-            background: linear-gradient(135deg, #8b0000 0%, #b22222 100%);
+            background: linear-gradient(135deg, #C9A961 0%, #B8963C 100%);
             color: white;
             padding: 2rem 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -84,13 +84,105 @@
 
         .hero p {
             font-size: 1.3rem;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 2rem;
+        }
+
+        .download-badge {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .download-badge img {
+            height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .download-badge:hover img {
+            transform: scale(1.05);
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 4rem 2rem;
+        }
+
+        .app-showcase {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .app-showcase h2 {
+            color: #C9A961;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .app-showcase .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .pricing {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .pricing h3 {
+            color: #C9A961;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card h4 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-card .price {
+            color: #C9A961;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .pricing-card ul li {
+            padding: 0.4rem 0;
+            color: #555;
+        }
+
+        .pricing-card ul li::before {
+            content: "✓ ";
+            color: #4CAF50;
+            font-weight: bold;
+            margin-right: 0.5rem;
         }
 
         .features {
@@ -114,7 +206,7 @@
         }
 
         .feature-card h3 {
-            color: #8b0000;
+            color: #C9A961;
             margin-bottom: 1rem;
             font-size: 1.5rem;
         }
@@ -125,7 +217,7 @@
         }
 
         .cta-section {
-            background: linear-gradient(135deg, #8b0000 0%, #b22222 100%);
+            background: linear-gradient(135deg, #C9A961 0%, #B8963C 100%);
             color: white;
             padding: 4rem 2rem;
             border-radius: 10px;
@@ -147,7 +239,7 @@
             display: inline-block;
             padding: 1rem 2rem;
             background: white;
-            color: #8b0000;
+            color: #C9A961;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
@@ -158,25 +250,23 @@
             background: #f4f4f4;
         }
 
-        .daily-reading {
+        .about-section {
             background: white;
-            padding: 2rem;
+            padding: 3rem 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 4rem;
         }
 
-        .daily-reading h2 {
-            color: #8b0000;
+        .about-section h2 {
+            color: #C9A961;
             margin-bottom: 1rem;
             font-size: 2rem;
         }
 
-        .reading-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
+        .about-section p {
+            margin-bottom: 1rem;
             color: #555;
-            font-style: italic;
+            line-height: 1.8;
         }
 
         footer {
@@ -221,6 +311,10 @@
             .cta-section h2 {
                 font-size: 1.8rem;
             }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -230,84 +324,160 @@
             <a href="/copticlife/" class="logo">CopticLife</a>
             <ul>
                 <li><a href="/copticlife/">Home</a></li>
-                <li><a href="#readings">Readings</a></li>
-                <li><a href="#prayers">Prayers</a></li>
-                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="/copticlife/privacy.html">Privacy</a></li>
             </ul>
         </nav>
         <div class="hero">
-            <h1>Welcome to CopticLife</h1>
-            <p>Your spiritual companion for daily prayers, readings, and Orthodox Christian living</p>
+            <h1>CopticLife</h1>
+            <p>Your complete Coptic Orthodox companion for iPhone and iPad</p>
+            <p style="font-size: 1.1rem; opacity: 0.9;">Daily prayers • Liturgical calendar • Fasting guide • Bible reading plans</p>
+            <!-- App Store badge will go here once app is published -->
+            <div class="download-badge">
+                <a href="#download">
+                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1577836800" alt="Download on the App Store" style="border-radius: 13px;">
+                </a>
+            </div>
         </div>
     </header>
 
     <div class="container">
-        <section class="daily-reading" id="readings">
-            <h2>✝ Today's Reading</h2>
-            <div class="reading-content">
-                <p>"And Jesus came and spoke to them, saying, 'All authority has been given to Me in heaven and on earth. Go therefore and make disciples of all the nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age.' Amen."</p>
-                <p><strong>- Matthew 28:18-20</strong></p>
+        <section class="app-showcase" id="download">
+            <h2>📱 Available Now on iOS</h2>
+            <p class="subtitle">Beautiful, authentic, and designed for daily spiritual practice</p>
+            
+            <div class="pricing">
+                <h3>💎 Free Forever</h3>
+                <p style="color: #666; margin-bottom: 1.5rem;">Everything you need for your spiritual journey, completely free</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h4>Free</h4>
+                        <div class="price">$0</div>
+                        <ul>
+                            <li>Complete Agpeya (7 prayer hours)</li>
+                            <li>Full liturgical calendar</li>
+                            <li>Comprehensive fasting guide</li>
+                            <li>Bible reading plans</li>
+                            <li>Date converter</li>
+                            <li>iCloud sync</li>
+                            <li>Dark mode</li>
+                            <li>Works offline</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-card" style="border: 2px solid #C9A961;">
+                        <h4>Premium</h4>
+                        <div class="price">$4.99</div>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">One-time purchase • Lifetime access</p>
+                        <ul>
+                            <li>Everything in Free</li>
+                            <li>Remove ads</li>
+                            <li>Unlimited prayer tracking</li>
+                            <li>Prayer statistics</li>
+                            <li>Support development</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 1.5rem; color: #666; font-style: italic;">No subscriptions. No recurring charges. One price, lifetime access.</p>
             </div>
         </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <div class="feature-icon">📖</div>
-                <h3>Daily Scripture</h3>
-                <p>Access daily readings from the Synaxarium, Bible passages, and patristic teachings to nourish your spiritual journey.</p>
-            </div>
+        <section id="features">
+            <h2 style="text-align: center; font-size: 2.5rem; color: #C9A961; margin-bottom: 3rem;">Features</h2>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🙏</div>
+                    <h3>Complete Agpeya</h3>
+                    <p>All seven prayer hours with Coptic and English text. Beautiful reading experience with adjustable text size, dark mode, and offline access.</p>
+                </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">🙏</div>
-                <h3>Prayer Book</h3>
-                <p>Complete collection of Coptic Orthodox prayers including Agpeya hours, liturgical prayers, and personal devotions.</p>
-            </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Liturgical Calendar</h3>
+                    <p>Full Coptic Orthodox calendar with major feasts, minor feasts, saints days, and fasting periods. Automatically calculated for any year.</p>
+                </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">📅</div>
-                <h3>Church Calendar</h3>
-                <p>Stay connected with feast days, fasting periods, and special occasions in the Coptic Orthodox liturgical year.</p>
-            </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🥗</div>
+                    <h3>Fasting Guide</h3>
+                    <p>Comprehensive fasting information showing current fasting status, food guidelines, and upcoming fasting periods throughout the year.</p>
+                </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">🎵</div>
-                <h3>Hymns & Liturgy</h3>
-                <p>Explore the beauty of Coptic hymns and liturgical texts with translations and audio resources.</p>
-            </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>Bible Reading Plans</h3>
+                    <p>Multiple reading plans including one-year, chronological, and canonical order. Track your progress and stay consistent.</p>
+                </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">⛪</div>
-                <h3>Find a Church</h3>
-                <p>Locate Coptic Orthodox churches near you and discover service times and community events.</p>
-            </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Date Converter</h3>
+                    <p>Easily convert between Gregorian and Coptic dates. View today's date in both calendars with full month and year information.</p>
+                </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">📚</div>
-                <h3>Educational Resources</h3>
-                <p>Learn about Coptic history, theology, and traditions through articles, videos, and study materials.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h3>iCloud Sync</h3>
+                    <p>Sync your prayer progress, Bible reading, and settings across all your Apple devices automatically. Free for all users.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Prayer Tracking</h3>
+                    <p>Track your daily prayers and build streaks. Premium users get detailed statistics and unlimited prayer history.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Dark Mode</h3>
+                    <p>Beautiful dark mode that automatically adapts to your device settings. Easy on the eyes for evening prayers.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>iPad Optimized</h3>
+                    <p>Specially designed layouts for iPad with larger text, better use of screen space, and split-view support.</p>
+                </div>
             </div>
         </section>
 
         <section class="cta-section">
             <h2>Begin Your Spiritual Journey</h2>
             <p>Join thousands of faithful Christians deepening their connection with God through daily prayer and scripture.</p>
-            <a href="#" class="btn">Get Started Today</a>
+            <a href="#download" class="btn">Download Free on iOS</a>
         </section>
 
-        <section class="daily-reading">
+        <section class="about-section" id="about">
             <h2>About CopticLife</h2>
-            <p>CopticLife is a community-driven platform dedicated to supporting the spiritual life of Coptic Orthodox Christians worldwide. We provide authentic resources rooted in the teachings of the Church Fathers and the rich tradition of the Coptic Orthodox Church.</p>
-            <p>Whether you're seeking daily prayers, liturgical texts, or ways to connect with your local church community, CopticLife is here to support your journey of faith.</p>
+            <p>CopticLife is a mobile application dedicated to supporting the spiritual life of Coptic Orthodox Christians worldwide. We provide authentic resources rooted in the teachings of the Church Fathers and the rich tradition of the Coptic Orthodox Church.</p>
+            
+            <p>Our mission is to make daily prayer, liturgical knowledge, and spiritual discipline accessible to everyone through beautiful, modern technology. Whether you're at home, traveling, or anywhere in the world, CopticLife helps you maintain your connection to the Church and your spiritual practice.</p>
+            
+            <p><strong>Key Principles:</strong></p>
+            <ul style="margin-left: 2rem; margin-top: 1rem; color: #555;">
+                <li>Authentic Coptic Orthodox content</li>
+                <li>Beautiful, intuitive design</li>
+                <li>Privacy-focused (no accounts, data stays on your device)</li>
+                <li>Works completely offline</li>
+                <li>Free core features for everyone</li>
+                <li>Regular updates and improvements</li>
+            </ul>
+
+            <p style="margin-top: 2rem;"><strong>System Requirements:</strong> iOS 15.0 or later, compatible with iPhone and iPad</p>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2026 CopticLife. All rights reserved.</p>
         <p>
-            <a href="privacy.html">Privacy Policy</a> | 
-            <a href="#contact">Contact Us</a> | 
-            <a href="#support">Support</a>
+            <a href="/copticlife/">Home</a> | 
+            <a href="/copticlife/privacy.html">Privacy Policy</a> | 
+            <a href="mailto:support@copticlife.app">Contact Us</a>
         </p>
         <p style="margin-top: 1rem;">☦ In the name of the Father, the Son, and the Holy Spirit, One God. Amen. ☦</p>
     </footer>
