@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CopticLife - Your spiritual companion for Coptic Orthodox Christian life, prayers, and community">
+    <meta name="keywords" content="Coptic, Orthodox, Christianity, Prayers, Church, Liturgy, Synaxarium">
+    <meta name="author" content="CopticLife Team">
+    <title>CopticLife - Coptic Orthodox Spiritual Resources</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b0000 0%, #b22222 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo::before {
+            content: "☦";
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .feature-card h3 {
+            color: #8b0000;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #8b0000 0%, #b22222 100%);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #8b0000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background: #f4f4f4;
+        }
+
+        .daily-reading {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 4rem;
+        }
+
+        .daily-reading h2 {
+            color: #8b0000;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .reading-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            font-style: italic;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CopticLife</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#readings">Readings</a></li>
+                <li><a href="#prayers">Prayers</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to CopticLife</h1>
+            <p>Your spiritual companion for daily prayers, readings, and Orthodox Christian living</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="daily-reading" id="readings">
+            <h2>✝ Today's Reading</h2>
+            <div class="reading-content">
+                <p>"And Jesus came and spoke to them, saying, 'All authority has been given to Me in heaven and on earth. Go therefore and make disciples of all the nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age.' Amen."</p>
+                <p><strong>- Matthew 28:18-20</strong></p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <h3>Daily Scripture</h3>
+                <p>Access daily readings from the Synaxarium, Bible passages, and patristic teachings to nourish your spiritual journey.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🙏</div>
+                <h3>Prayer Book</h3>
+                <p>Complete collection of Coptic Orthodox prayers including Agpeya hours, liturgical prayers, and personal devotions.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Church Calendar</h3>
+                <p>Stay connected with feast days, fasting periods, and special occasions in the Coptic Orthodox liturgical year.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎵</div>
+                <h3>Hymns & Liturgy</h3>
+                <p>Explore the beauty of Coptic hymns and liturgical texts with translations and audio resources.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⛪</div>
+                <h3>Find a Church</h3>
+                <p>Locate Coptic Orthodox churches near you and discover service times and community events.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Educational Resources</h3>
+                <p>Learn about Coptic history, theology, and traditions through articles, videos, and study materials.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Begin Your Spiritual Journey</h2>
+            <p>Join thousands of faithful Christians deepening their connection with God through daily prayer and scripture.</p>
+            <a href="#" class="btn">Get Started Today</a>
+        </section>
+
+        <section class="daily-reading">
+            <h2>About CopticLife</h2>
+            <p>CopticLife is a community-driven platform dedicated to supporting the spiritual life of Coptic Orthodox Christians worldwide. We provide authentic resources rooted in the teachings of the Church Fathers and the rich tradition of the Coptic Orthodox Church.</p>
+            <p>Whether you're seeking daily prayers, liturgical texts, or ways to connect with your local church community, CopticLife is here to support your journey of faith.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CopticLife. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="#contact">Contact Us</a> | 
+            <a href="#support">Support</a>
+        </p>
+        <p style="margin-top: 1rem;">☦ In the name of the Father, the Son, and the Holy Spirit, One God. Amen. ☦</p>
+    </footer>
+</body>
+</html>
