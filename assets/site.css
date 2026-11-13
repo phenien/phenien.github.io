@@ -106,3 +106,7 @@ body.theme-sunday-school { background: var(--page); }
 .store-badge { display: inline-block; vertical-align: middle; line-height: 0; }
 .store-badge img { display: block; height: 50px; width: auto; max-width: 100%; }
 .hero .store-badge { margin-top: 16px; }
+
+.store-badges { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; max-width: 100%; }
+.store-badges .store-badge { margin-top: 0; }
+.store-badges .google-play-badge img { height: 74px; }

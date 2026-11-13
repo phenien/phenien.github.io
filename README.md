@@ -39,3 +39,9 @@ Deploy through the repository’s existing GitHub Pages workflow. Local edits do
 - https://developers.google.com/admob/ios/privacy/data-disclosure
 - https://developers.google.com/admob/ios/privacy/ad-serving-modes
 - Native app source files: `CloudSyncManager.swift`, `AgpeyaView.swift`, `Models.swift`, `PremiumPurchaseView.swift`, `ConfessionPersistence.swift`, `ReminderPersistence.swift`, `iCloudManager.swift`, `AdMobManager.swift`, and Sunday School Manager’s Firebase services and attendance model.
+
+## Android download
+
+Sunday School Manager is also available on [Google Play](https://play.google.com/store/apps/details?id=com.henien.ssmanager_flutter), verified as published by Henien on 13 November 2026. The homepage and app page display Google’s official download badge alongside Apple’s badge. Store purchases are managed separately.
+
+The Google Play listing uses `/SSmanager-support/` and `/SSmanager-support/privacy.html`; these legacy addresses redirect to the current support and privacy pages.
