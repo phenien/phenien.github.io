@@ -23,14 +23,16 @@ Deploy through the repository’s existing GitHub Pages workflow. Local edits do
 - Verified Sunday School Manager’s App Store ID (`6755734036`) and Confession Manager’s ID (`6755344059`) against their Apple listings.
 - Replaced Sunday School Manager’s placeholder download link and added Confession Manager download links.
 - Removed Confession Manager’s stale hardcoded version and unverified fixed upgrade prices.
-- No CopticLife App Store listing was found during the review. Its page links to the established developer support address for availability instead of displaying a download badge without a store destination.
-- CopticLife’s iOS 17 minimum matches the native project configuration; confirm against the store listing when published.
+- Verified CopticLife’s listing under the name “Coptic Life” (`6757601710`) and added direct App Store links to the homepage and both app-page download buttons.
+- CopticLife’s iOS 17 minimum matches both its native project configuration and App Store listing.
 - Corrected privacy pages against native iOS storage and SDK implementation: Confession Manager uses local JSON, automatic CloudKit sync when available, and AdMob; CopticLife enables iCloud sync by default for new users.
 - Removed unsupported security-audit, zero-data-collection, deletion-deadline and advertising guarantees. Advertising descriptions use Google’s SDK disclosure guidance.
 - Corrected CopticLife’s Agpeya languages to English and Arabic and placed full Agpeya access under Premium, matching the native paywall. Corrected viewer access to assigned classes.
 - The public store listings may lag local app development. No mailbox-delivery test or legal-compliance certification was performed.
 
 ### Review sources
+
+- https://apps.apple.com/app/coptic-life/id6757601710
 
 - https://apps.apple.com/us/app/sunday-school-manager/id6755734036
 - https://apps.apple.com/ca/app/confession-manager/id6755344059
