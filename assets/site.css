@@ -111,3 +111,7 @@ body.theme-sunday-school { background: var(--page); }
   .theme-sunday-school .logo { font-size: 22px; }
   .title-logo { width: 40px; height: 40px; flex-basis: 40px; }
 }
+
+.store-badge { display: inline-block; vertical-align: middle; line-height: 0; }
+.store-badge img { display: block; height: 50px; width: auto; max-width: 100%; }
+.hero .store-badge { margin-top: 16px; }
