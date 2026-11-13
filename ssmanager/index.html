@@ -18,7 +18,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, var(--brand) 0%, var(--brand-end) 100%);
         }
 
         .container {
@@ -47,7 +47,7 @@
         .logo {
             font-size: 28px;
             font-weight: bold;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, var(--brand) 0%, var(--brand-end) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -62,7 +62,7 @@
         }
 
         nav a:hover {
-            color: #667eea;
+            color: var(--brand);
         }
 
         /* Hero Section */
@@ -89,7 +89,7 @@
             display: inline-block;
             padding: 16px 40px;
             background: white;
-            color: #667eea;
+            color: var(--brand);
             text-decoration: none;
             border-radius: 30px;
             font-weight: 600;
@@ -153,7 +153,7 @@
         /* Roles Section */
         .roles {
             padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, var(--brand) 0%, var(--brand-end) 100%);
             color: white;
         }
 
@@ -217,7 +217,7 @@
         .premium-price {
             font-size: 64px;
             font-weight: bold;
-            color: #667eea;
+            color: var(--brand);
             margin: 30px 0;
         }
 
@@ -236,7 +236,7 @@
         /* Contact Section */
         .contact {
             padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, var(--brand) 0%, var(--brand-end) 100%);
             color: white;
             text-align: center;
         }
@@ -265,7 +265,7 @@
 
         .contact a:hover {
             background: white;
-            color: #667eea;
+            color: var(--brand);
         }
 
         /* Footer */
@@ -277,7 +277,7 @@
         }
 
         footer a {
-            color: #667eea;
+            color: var(--brand);
             text-decoration: none;
             margin: 0 15px;
         }
@@ -308,8 +308,9 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body>
+<body class="theme-sunday-school">
     <!-- Header -->
     <header>
         <div class="container">
@@ -331,7 +332,7 @@
         <div class="container">
             <h1>Sunday School Management Made Easy</h1>
             <p>Track attendance, manage classes, and engage students with our powerful iOS app</p>
-            <a href="#" class="cta-button">Download on the App Store</a>
+            <a href="https://apps.apple.com/app/id6755734036" class="cta-button">Download on the App Store</a>
         </div>
     </section>
 
@@ -363,7 +364,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
                     <h3>Offline Mode</h3>
-                    <p>Works without internet! All data syncs automatically when you're back online. Never lose your work.</p>
+                    <p>Works without internet! All data syncs automatically when you're back online. An internet connection is needed for sign-in and synchronization.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔔</div>
@@ -378,7 +379,7 @@
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3>Secure & Private</h3>
-                    <p>Your data is encrypted and secure. Role-based access ensures only authorized users can view sensitive information.</p>
+                    <p>Firebase services support sign-in and cloud storage. Admin, teacher and viewer roles control access to class information.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
@@ -419,10 +420,10 @@
                 <div class="role-card">
                     <h3>👀 Viewer</h3>
                     <ul>
-                        <li>View all classes and students</li>
-                        <li>Access attendance records</li>
-                        <li>View lesson schedules</li>
-                        <li>See analytics and insights</li>
+                        <li>View assigned classes and students</li>
+                        <li>Access assigned attendance records</li>
+                        <li>View assigned lesson schedules</li>
+                        <li>See available class insights</li>
                         <li>Export reports</li>
                         <li>Read-only access (no editing)</li>
                     </ul>
@@ -436,8 +437,8 @@
         <div class="container">
             <h2>Go Premium</h2>
             <p>Remove ads and support development</p>
-            <div class="premium-price">£3.99</div>
-            <p style="color: #666; margin-bottom: 40px;">One-time purchase • Works on all your devices</p>
+            <div class="premium-price">Ad-free upgrade</div>
+            <p style="color: #666; margin-bottom: 40px;">See current pricing and availability in the app.</p>
             <div class="premium-features">
                 <ul style="list-style: none;">
                     <li>✓ Ad-free experience</li>
@@ -445,7 +446,7 @@
                     <li>✓ Support ongoing development</li>
                     <li>✓ One-time payment (not a subscription)</li>
                     <li>✓ Works across all your Apple devices</li>
-                    <li>✓ Family Sharing compatible</li>
+
                 </ul>
             </div>
         </div>
@@ -463,7 +464,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 SSmanager. All rights reserved.</p>
+            <p>&copy; 2026 SSmanager. All rights reserved.</p>
             <p style="margin-top: 15px;">
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="#contact">Support</a>

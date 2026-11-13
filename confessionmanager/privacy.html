@@ -8,8 +8,8 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: linear-gradient(135deg, #faf7f2 0%, #f2ece3 100%);
-      color: #3a2a1b;
+      background: linear-gradient(135deg, var(--page) 0%, var(--page-end) 100%);
+      color: var(--ink);
       margin: 0;
       padding: 0;
       display: flex;
@@ -22,7 +22,7 @@
       padding: 3rem 1rem 1rem;
     }
     h1 {
-      color: #a05025;
+      color: var(--link);
       font-size: 2rem;
       margin-bottom: 0.5rem;
     }
@@ -36,12 +36,12 @@
       line-height: 1.6;
     }
     h2 {
-      color: #a05025;
+      color: var(--link);
       font-size: 1.2rem;
       margin-top: 1.5rem;
     }
     a {
-      color: #a05025;
+      color: var(--link);
       text-decoration: none;
       font-weight: 600;
     }
@@ -56,44 +56,33 @@
       color: #7b6a58;
     }
   </style>
+    <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body>
+<body class="theme-confession">
   <header>
     <h1>Privacy Policy</h1>
   </header>
 
   <main>
-    <p><strong>Effective Date:</strong> November 2025</p>
-
-    <p>Confession Manager is committed to protecting your privacy. This policy explains what data the app handles and how it is stored.</p>
-
-    <h2>1. Data Storage and Security</h2>
-    <p>All data you enter in Confession Manager (such as names, notes, confessions, and reminders) is stored securely on your device using Apple's <strong>Core Data</strong> framework. Your information never leaves your device unless you choose to back it up via iCloud.</p>
-
-    <h2>2. iCloud Sync (Optional)</h2>
-    <p>If you enable iCloud, your app data will be securely stored and synchronized via Apple's iCloud service using <strong>CloudKit</strong>. This data is encrypted and associated only with your Apple ID. Confession Manager does not have direct access to your iCloud account.</p>
-
-    <h2>3. No Data Collection</h2>
-    <p>Confession Manager does not collect, transmit, or share any personal or usage data. We do not use analytics, tracking, or third-party advertising frameworks that send data off your device.</p>
-
-    <h2>4. In-App Purchases</h2>
-    <p>Payments for premium features (such as removing ads) are processed securely through Apple's App Store. Confession Manager does not handle or store any payment information.</p>
-
-    <h2>5. Ads and Premium Upgrade</h2>
-    <p>The free version may display non-personalized ads. No personal data is shared with advertisers. Upgrading to Premium removes all ads.</p>
-
-    <h2>6. Your Rights</h2>
-    <p>You can delete all app data at any time by removing the app from your device. If you use iCloud, deleting the app data in iCloud will remove all synced content.</p>
-
-    <h2>7. Contact</h2>
-    <p>If you have questions or concerns about this policy, please contact:</p>
-    <p><a href="mailto:smassservice@gmail.com">smassservice@gmail.com</a></p>
-
-    <p>We take privacy seriously and continuously work to maintain user trust through transparency and secure design.</p>
+<h2>Records stored by Confession Manager</h2>
+<p>Confession Manager stores the penitent details, contact information, confession dates, notes and reminders you enter. Penitent records are encoded as JSON in local app preferences; reminders are saved in local app files. The app does not use Core Data for these records.</p>
+<p>Biometric locking is available for access to the app. Device protections and biometric locking do not replace care when entering, exporting or sharing sensitive pastoral information.</p>
+<h2>iCloud and exported copies</h2>
+<p>When iCloud is available for the app, Confession Manager attempts to synchronize penitent and reminder records through your private CloudKit database. Supported settings also use Apple’s iCloud key-value storage. Synchronization can occur automatically when an iCloud account is available; it is not limited to a manual backup action.</p>
+<p>The app supports plain JSON exports and encrypted exports. Plain exports contain readable records, and exported copies are outside the app’s access controls. Protect files you create and share. See <a href="https://www.apple.com/legal/privacy/data/en/icloud/">Apple’s iCloud privacy information</a>.</p>
+<h2>Advertising and tracking</h2>
+<p>The free version uses Google AdMob. Google’s advertising SDK may process device identifiers, IP address (which can indicate approximate location), ad interactions, diagnostics and performance information to provide advertising, reporting and fraud prevention.</p>
+<p>On supported iOS versions, App Tracking Transparency controls permission to track activity across other companies’ apps and websites and access the advertising identifier. Declining tracking does not mean that all advertising data collection stops. Ad serving also depends on consent, region and Google’s policies.</p>
+<p>You can manage tracking permission in iOS Settings → Privacy &amp; Security → Tracking. The optional Premium upgrade removes displayed ads. Apple shows the current price before purchase.</p>
+<p>See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDK data disclosures</a>.</p><h2>Purchases and third-party services</h2>
+<p>Apple processes in-app purchases through the App Store. The app checks purchase status to unlock Premium; it does not handle your payment card details. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p><h2>Deletion and control</h2>
+<p>Use the app’s record-management controls to update or delete records. Deleting the app removes its local app data but does not necessarily remove iCloud records, backups or exported files. Manage cloud data in your Apple Account’s iCloud settings and delete exported copies separately.</p><h2>Contact and policy updates</h2>
+<p>For support, access or deletion requests, or questions about data handling, contact Paul Henien at <a href="mailto:smassservice@gmail.com">smassservice@gmail.com</a>. If you contact support, the information you provide is used to respond to your request. Do not include confession notes or other sensitive records in a support email.</p>
+<p>This page will be updated when the described practices change. Last updated: 13 November 2026.</p>
   </main>
 
   <footer>
-    &copy; 2025 Paul Henien. All rights reserved.
+    &copy; 2026 Paul Henien. All rights reserved.
   </footer>
 </body>
 </html>

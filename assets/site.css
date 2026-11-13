@@ -1,0 +1,91 @@
+/* Brand values mirror ModernTheme.swift, CopticTheme, and adaptive parchment colours. */
+:root {
+  --page: #f1f5f9;
+  --page-end: #ffffff;
+  --ink: #1e293b;
+  --muted: #475569;
+  --brand: #337ff2;
+  --brand-end: #33ccd9;
+  --link: #2666cc;
+  --tint: #edf5ff;
+}
+.theme-sunday-school {
+  --brand: #337ff2;
+  --brand-end: #33ccd9;
+  --link: #2666cc;
+  --page: #f2f2f7;
+  --tint: #edf5ff;
+}
+.theme-coptic-life {
+  --brand: #d4af37;
+  --brand-end: #b18b1e;
+  --link: #735b13;
+  --page: #f1f5f9;
+  --tint: #faf5e4;
+}
+.theme-confession {
+  --brand: #cc6633;
+  --brand-end: #66331a;
+  --link: #994522;
+  --page: #f5ebd6;
+  --page-end: #fcf7ed;
+  --ink: #523621;
+  --muted: #66331a;
+  --tint: #fcf7ed;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+* { box-sizing: border-box; }
+body { background-color: var(--page); color: var(--ink); }
+a { overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--link); outline-offset: 5px; border-radius: 3px; }
+img { max-width: 100%; }
+.brand-icon { display: block; margin: 0 auto 1.5rem; border-radius: 24%; }
+.portfolio { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; }
+.portfolio header { background: #1e293b; padding: 64px 20px; }
+.portfolio header p { color: #cbd5e1; }
+.portfolio .app-card { border-top: 5px solid var(--brand); background: linear-gradient(120deg, #fff 65%, var(--tint)); }
+.portfolio .app-card h2, .portfolio .app-card a { color: var(--link); }
+body.theme-sunday-school { background: var(--page); }
+.theme-sunday-school .hero,
+.theme-sunday-school .roles,
+.theme-sunday-school .contact { background: linear-gradient(135deg, #2666cc, #1d6570); }
+.theme-sunday-school .logo { background: none; -webkit-text-fill-color: var(--link); color: var(--link); }
+.theme-sunday-school .feature-card { background: var(--tint); }
+.theme-sunday-school .cta-button,
+.theme-sunday-school .premium-price,
+.theme-sunday-school .back-link,
+.theme-sunday-school nav a:hover { color: var(--link); }
+.theme-sunday-school footer a { color: #9cc7ff; }
+.theme-coptic-life header,
+.theme-coptic-life .cta-section { background: linear-gradient(135deg, #d4af37, #b18b1e); color: #28220d; }
+.theme-coptic-life header a,
+.theme-coptic-life .hero h1,
+.theme-coptic-life .hero p { color: #28220d; }
+.theme-coptic-life h2,
+.theme-coptic-life .feature-card h3,
+.theme-coptic-life .pricing h3,
+.theme-coptic-life .pricing-card .price,
+.theme-coptic-life .btn { color: var(--link) !important; }
+.theme-confession main { width: calc(100% - 32px); margin-bottom: 32px; background: rgba(255,255,255,.6); border-color: #cc9966; }
+.theme-confession footer { color: var(--muted); }
+@media (max-width: 768px) {
+  .theme-sunday-school .header-content { flex-direction: column; gap: 12px; }
+  .theme-sunday-school nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 18px; }
+  .theme-sunday-school nav a { margin: 0; }
+  .feature-grid, .role-grid, .features { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+  .theme-sunday-school .contact a { font-size: 18px; max-width: 100%; padding: 12px 18px; }
+  .theme-sunday-school .content { padding: 24px; }
+}
+@media (max-width: 600px) {
+  .portfolio .container { margin: 20px auto; padding: 16px; }
+  .portfolio .app-card { padding: 24px; }
+  .portfolio .app-card h2 { font-size: 25px; }
+  .portfolio .app-icon { width: 88px; height: 88px; }
+  .theme-confession main { padding: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+.theme-sunday-school .content h2,
+.theme-sunday-school .content h3 { color: var(--link); }

@@ -20,7 +20,7 @@
         }
 
         header {
-            background: linear-gradient(135deg, #C9A961 0%, #B8963C 100%);
+            background: linear-gradient(135deg, var(--brand) 0%, var(--brand-end) 100%);
             color: white;
             padding: 2rem 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -81,7 +81,7 @@
         }
 
         h1 {
-            color: #C9A961;
+            color: var(--brand);
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
@@ -95,7 +95,7 @@
         }
 
         h2 {
-            color: #C9A961;
+            color: var(--brand);
             font-size: 1.8rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
@@ -124,7 +124,7 @@
         .highlight {
             background: #fff9e6;
             padding: 1rem;
-            border-left: 4px solid #C9A961;
+            border-left: 4px solid var(--brand);
             margin: 1.5rem 0;
         }
 
@@ -189,15 +189,16 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body>
+<body class="theme-coptic-life">
     <header>
         <nav>
             <a href="/copticlife/" class="logo">CopticLife</a>
             <ul>
                 <li><a href="/copticlife/">Home</a></li>
                 <li><a href="/copticlife/#features">Features</a></li>
-                <li><a href="/copticlife/#download">Download</a></li>
+                <li><a href="/copticlife/#download">Availability</a></li>
                 <li><a href="/copticlife/#about">About</a></li>
                 <li><a href="/copticlife/privacy.html">Privacy</a></li>
             </ul>
@@ -205,267 +206,24 @@
     </header>
 
     <div class="container">
-        <div class="privacy-content">
-            <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: January 14, 2026</p>
-
-            <div class="privacy-first">
-                <h3>🔒 Privacy First</h3>
-                <p><strong>CopticLife is designed with your privacy in mind.</strong> We do not collect, store, or sell your personal information. Your prayer life is private and stays that way.</p>
-                <ul style="margin-left: 1rem;">
-                    <li>✅ No account required</li>
-                    <li>✅ No email collection</li>
-                    <li>✅ No tracking of your prayers</li>
-                    <li>✅ All data stays on your device</li>
-                    <li>✅ Optional iCloud sync (controlled by you)</li>
-                </ul>
-            </div>
-
-            <p>This Privacy Policy explains how CopticLife ("we", "us", or "our") handles information when you use our iOS application. By using CopticLife, you agree to the practices described in this policy.</p>
-
-            <h2>1. Information We Do NOT Collect</h2>
-
-            <p>CopticLife is designed to respect your privacy. We do NOT collect:</p>
-            <ul>
-                <li>Your name, email address, or personal information</li>
-                <li>Account credentials (no account required)</li>
-                <li>Your prayer history or spiritual practices</li>
-                <li>Your location data</li>
-                <li>Your contacts or photos</li>
-                <li>Usage analytics or behavioral data</li>
-            </ul>
-
-            <h2>2. Data That Stays On Your Device</h2>
-
-            <p>All of your personal data is stored locally on your device and is never transmitted to our servers. This includes:</p>
-            <ul>
-                <li><strong>Prayer Progress:</strong> Which Agpeya hours you've prayed and your prayer streaks</li>
-                <li><strong>Bible Reading Progress:</strong> Your reading plan and completed readings</li>
-                <li><strong>App Settings:</strong> Text size preferences, dark mode settings, and notification preferences</li>
-                <li><strong>Selected Dates:</strong> Dates you've viewed in the calendar</li>
-            </ul>
-
-            <p><strong>Important:</strong> Because this data is stored only on your device, if you delete the app or erase your device, this data will be lost unless you've enabled iCloud sync (see below).</p>
-
-            <h2>3. iCloud Sync (Optional)</h2>
-
-            <p>CopticLife offers <strong>optional</strong> iCloud sync to keep your data synchronized across your Apple devices (iPhone, iPad, Mac).</p>
-
-            <h3>What Gets Synced:</h3>
-            <ul>
-                <li>Prayer progress and streaks</li>
-                <li>Bible reading progress</li>
-                <li>App settings and preferences</li>
-            </ul>
-
-            <h3>How iCloud Works:</h3>
-            <ul>
-                <li>iCloud sync is <strong>completely optional</strong> and disabled by default</li>
-                <li>You can enable or disable it anytime in the app's More → iCloud Sync settings</li>
-                <li>Data is encrypted and stored in your personal iCloud account</li>
-                <li>We do not have access to your iCloud data</li>
-                <li>Apple's iCloud Privacy Policy applies to synced data</li>
-            </ul>
-
-            <p>To learn more about iCloud privacy, visit: <a href="https://www.apple.com/legal/privacy/data/en/icloud/" target="_blank">Apple's iCloud Privacy Policy</a></p>
-
-            <h2>4. Advertising (Free Version Only)</h2>
-
-            <p>The free version of CopticLife displays advertisements powered by <strong>Google AdMob</strong>. Premium users do not see any ads.</p>
-
-            <h3>4.1 App Tracking Transparency</h3>
-            <p>When you first open the app, iOS will ask your permission to track you across apps and websites owned by other companies. This is called <strong>App Tracking Transparency (ATT)</strong>.</p>
-
-            <p><strong>Your choice:</strong></p>
-            <ul>
-                <li><strong>Allow Tracking:</strong> You'll see personalized ads based on your interests</li>
-                <li><strong>Ask App Not to Track:</strong> You'll see non-personalized ads only</li>
-            </ul>
-
-            <p><strong>Either way, the app works exactly the same.</strong> Your choice only affects whether ads are personalized.</p>
-
-            <h3>4.2 What Google AdMob May Collect</h3>
-            <p>If you allow tracking, Google AdMob may collect:</p>
-            <ul>
-                <li>Device information (model, OS version, screen size)</li>
-                <li>Advertising identifier (IDFA)</li>
-                <li>Ad interaction data (which ads you view or tap)</li>
-                <li>IP address (approximate location)</li>
-            </ul>
-
-            <p>If you choose "Ask App Not to Track," AdMob will only collect minimal information needed to show non-personalized ads.</p>
-
-            <p><strong>Important:</strong> We do not receive or have access to any of the data collected by AdMob. Google handles all ad serving and data collection.</p>
-
-            <p>To learn more, see: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Data Collection</a></p>
-
-            <h3>4.3 How to Control Ad Tracking</h3>
-            <p>You can change your tracking preferences anytime:</p>
-            <ol>
-                <li>Open your device's <strong>Settings</strong></li>
-                <li>Go to <strong>Privacy & Security</strong> → <strong>Tracking</strong></li>
-                <li>Toggle <strong>CopticLife</strong> on or off</li>
-            </ol>
-
-            <p>You can also reset your advertising identifier:</p>
-            <ol>
-                <li>Open <strong>Settings</strong> → <strong>Privacy & Security</strong></li>
-                <li>Go to <strong>Apple Advertising</strong></li>
-                <li>Tap <strong>Reset Advertising Identifier</strong></li>
-            </ol>
-
-            <h2>5. In-App Purchases</h2>
-
-            <p>CopticLife uses Apple's StoreKit framework for the optional Premium upgrade ($4.99 one-time purchase).</p>
-
-            <ul>
-                <li>All payment processing is handled securely by Apple</li>
-                <li>We do not collect or store your payment information</li>
-                <li>Apple's Privacy Policy governs all purchase transactions</li>
-                <li>We only receive confirmation that a purchase was completed (not your payment details)</li>
-            </ul>
-
-            <p>To learn more: <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></p>
-
-            <h2>6. Data Security</h2>
-
-            <p>Your data is secure because:</p>
-            <ul>
-                <li>All data is stored locally on your device, protected by iOS security</li>
-                <li>iCloud data (if enabled) is encrypted in transit and at rest</li>
-                <li>We do not operate servers that store your data</li>
-                <li>We cannot access your prayer history or personal information</li>
-            </ul>
-
-            <h2>7. Children's Privacy</h2>
-
-            <p>CopticLife is suitable for users of all ages, including children. Because we do not collect any personal information, there are no special concerns for children's privacy.</p>
-
-            <ul>
-                <li>No account creation required</li>
-                <li>No personal information collected</li>
-                <li>Ads (free version) comply with children's privacy regulations</li>
-                <li>Parents can upgrade to Premium to remove all ads</li>
-            </ul>
-
-            <h2>8. Third-Party Services</h2>
-
-            <p>CopticLife uses the following third-party services:</p>
-
-            <h3>8.1 Apple Services</h3>
-            <ul>
-                <li><strong>iCloud (Optional):</strong> For syncing data across devices</li>
-                <li><strong>StoreKit:</strong> For in-app purchases</li>
-                <li><strong>Notification Services:</strong> For prayer reminders (local notifications only)</li>
-            </ul>
-            <p>Privacy Policy: <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></p>
-
-            <h3>8.2 Google AdMob (Free Version Only)</h3>
-            <ul>
-                <li><strong>Purpose:</strong> Display advertisements</li>
-                <li><strong>Data Collection:</strong> As described in Section 4 above</li>
-                <li><strong>Your Control:</strong> App Tracking Transparency settings</li>
-            </ul>
-            <p>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
-
-            <h2>9. Your Rights and Choices</h2>
-
-            <p>You have complete control over your data:</p>
-
-            <h3>9.1 Delete Your Data</h3>
-            <p>To delete all your local data:</p>
-            <ul>
-                <li>Uninstall the CopticLife app from your device</li>
-                <li>All locally stored data will be permanently deleted</li>
-            </ul>
-
-            <h3>9.2 Delete iCloud Data</h3>
-            <p>To delete synced data from iCloud:</p>
-            <ol>
-                <li>Open More → iCloud Sync in the app</li>
-                <li>Tap "Disable iCloud Sync"</li>
-                <li>Or go to iOS Settings → Apple ID → iCloud → Manage Storage → CopticLife → Delete Documents & Data</li>
-            </ol>
-
-            <h3>9.3 Control Ad Tracking</h3>
-            <ul>
-                <li>iOS Settings → Privacy & Security → Tracking → CopticLife (toggle off)</li>
-                <li>Or upgrade to Premium to remove all ads</li>
-            </ul>
-
-            <h2>10. Data Retention</h2>
-
-            <ul>
-                <li><strong>Local Data:</strong> Retained on your device until you delete the app</li>
-                <li><strong>iCloud Data:</strong> Retained in your iCloud account until you disable sync or delete the data</li>
-                <li><strong>We do not retain any data</strong> on our servers because we don't collect it in the first place</li>
-            </ul>
-
-            <h2>11. International Data Transfers</h2>
-
-            <p>Because all data stays on your device or in your personal iCloud account, there are no international data transfers by CopticLife.</p>
-
-            <p>However, if you use iCloud sync, your data may be stored in Apple data centers worldwide according to Apple's iCloud policies.</p>
-
-            <h2>12. Changes to This Privacy Policy</h2>
-
-            <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
-            <ul>
-                <li>Updating the "Last Updated" date at the top of this policy</li>
-                <li>Displaying a notice in the app</li>
-                <li>Updating this webpage</li>
-            </ul>
-
-            <p>Your continued use of CopticLife after any changes constitutes acceptance of the updated policy.</p>
-
-            <h2>13. California Privacy Rights (CCPA)</h2>
-
-            <p>If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA):</p>
-            <ul>
-                <li>We do not sell your personal information</li>
-                <li>We do not share personal information for cross-context behavioral advertising (after ATT opt-out)</li>
-                <li>Because we don't collect personal information (beyond what AdMob may collect with your permission), most CCPA rights don't apply</li>
-            </ul>
-
-            <h2>14. European Privacy Rights (GDPR)</h2>
-
-            <p>If you are in the European Union, you have rights under the General Data Protection Regulation (GDPR):</p>
-            <ul>
-                <li><strong>Right to Access:</strong> All your data is already accessible to you in the app</li>
-                <li><strong>Right to Erasure:</strong> Delete the app to erase all local data</li>
-                <li><strong>Right to Data Portability:</strong> Your data stays on your device and in your control</li>
-                <li><strong>Right to Object:</strong> You can opt out of ad tracking via iOS settings</li>
-            </ul>
-
-            <h2>15. Contact Us</h2>
-
-            <div class="contact-box">
-                <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
-                <p><strong>Email:</strong> <a href="mailto:privacy@copticlife.app">privacy@copticlife.app</a></p>
-                <p><strong>Support:</strong> <a href="mailto:support@copticlife.app">support@copticlife.app</a></p>
-                <p><strong>Website:</strong> <a href="https://phenien.github.io/copticlife/">https://phenien.github.io/copticlife/</a></p>
-                <p style="margin-top: 1rem;">We will respond to your inquiry within 30 days.</p>
-            </div>
-
-            <h2>16. Summary</h2>
-
-            <div class="highlight">
-                <p><strong>In Plain English:</strong></p>
-                <ul style="margin-left: 1.5rem;">
-                    <li>✅ Your prayer life is private and stays on your device</li>
-                    <li>✅ We don't collect, store, or sell your personal information</li>
-                    <li>✅ Optional iCloud sync (you control it)</li>
-                    <li>✅ Free version shows ads (Google AdMob handles this)</li>
-                    <li>✅ You choose whether ads are personalized (ATT permission)</li>
-                    <li>✅ Premium removes all ads ($4.99 one-time)</li>
-                    <li>✅ Delete the app anytime to erase all data</li>
-                </ul>
-            </div>
-
-            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #eee; text-align: center;">
-                <p>☦ May God bless you and keep you in His loving care. ☦</p>
-            </div>
-        </div>
+        <main class="privacy-content">
+<h1>Privacy Policy</h1>
+<h2>Prayer data and local storage</h2>
+<p>CopticLife does not require an app account. Prayer completion, streaks, Bible reading progress and preferences are stored locally using device storage. These records support progress displays, reading plans and reminders.</p>
+<h2>iCloud synchronization</h2>
+<p>The native iOS app enables iCloud sync by default for new users. You can turn it off in More → iCloud Sync. When enabled and iCloud is available, prayer progress, reading progress and supported settings synchronize through Apple’s iCloud key-value storage for devices using the same Apple Account.</p>
+<p>Turning off sync stops further app synchronization; it does not itself delete information already stored in iCloud. Removing the app does not necessarily remove iCloud data or device backups. Manage stored cloud data through your Apple Account’s iCloud settings. See <a href="https://www.apple.com/legal/privacy/data/en/icloud/">Apple’s iCloud privacy information</a>.</p>
+<h2>Advertising and tracking</h2>
+<p>The free version uses Google AdMob. Google’s advertising SDK may process device identifiers, IP address (which can indicate approximate location), ad interactions, diagnostics and performance information to provide advertising, reporting and fraud prevention.</p>
+<p>On supported iOS versions, App Tracking Transparency controls permission to track activity across other companies’ apps and websites and access the advertising identifier. Declining tracking does not mean that all advertising data collection stops. Ad serving also depends on consent, region and Google’s policies.</p>
+<p>You can manage tracking permission in iOS Settings → Privacy &amp; Security → Tracking. The optional Premium upgrade removes displayed ads. Apple shows the current price before purchase.</p>
+<p>See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a> and <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDK data disclosures</a>.</p><h2>Purchases and third-party services</h2>
+<p>Apple processes in-app purchases through the App Store. The app checks purchase status to unlock Premium; it does not handle your payment card details. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p><h2>Privacy choices</h2>
+<p>You can change notification permissions in iOS Settings and manage prayer and reading preferences in the app. To remove local app data, delete the app rather than offloading it. Manage cloud copies and backups separately through Apple’s settings.</p>
+<p>The presence of prayer content does not mean advertising is suitable for every child. Parents and guardians should review the app’s advertising and device privacy settings before allowing a child to use it.</p><h2>Contact and policy updates</h2>
+<p>For support, access or deletion requests, or questions about data handling, contact Paul Henien at <a href="mailto:smassservice@gmail.com">smassservice@gmail.com</a>. If you contact support, the information you provide is used to respond to your request. Do not include confession notes or other sensitive records in a support email.</p>
+<p>This page will be updated when the described practices change. Last updated: 13 November 2026.</p>
+        </main>
     </div>
 
     <footer>
@@ -473,7 +231,7 @@
         <p>
             <a href="/copticlife/">Home</a> | 
             <a href="/copticlife/privacy.html">Privacy Policy</a> | 
-            <a href="mailto:support@copticlife.app">Contact Us</a>
+            <a href="mailto:smassservice@gmail.com">Contact Us</a>
         </p>
     </footer>
 </body>
