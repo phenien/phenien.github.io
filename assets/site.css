@@ -118,3 +118,5 @@ body.theme-sunday-school { background: var(--page); }
 .store-badges { display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; max-width: 100%; }
 .store-badges .store-badge { margin-top: 0; }
 .store-badges .google-play-badge img { height: 74px; }
+
+.portfolio .app-download .download-label { margin: 0; }
