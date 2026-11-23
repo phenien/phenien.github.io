@@ -45,6 +45,14 @@ img { max-width: 100%; }
 .portfolio header p { color: #cbd5e1; }
 .portfolio .app-card { border-top: 5px solid var(--brand); background: linear-gradient(120deg, #fff 65%, var(--tint)); }
 .portfolio .app-card h2, .portfolio .app-card a { color: var(--link); }
+.portfolio .app-card { color: var(--ink); }
+.portfolio .app-info p { margin: 0 0 18px; }
+.portfolio .app-download { margin-bottom: 18px; }
+.portfolio .app-download .store-badges {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 74px;
+}
 body.theme-sunday-school { background: var(--page); }
 .theme-sunday-school .hero,
 .theme-sunday-school .roles,

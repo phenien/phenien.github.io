@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paul Henien – Developer Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/portfolio-icon.svg">
 
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f7f7f7;
             margin: 0;
             padding: 0;
-            color: #333;
         }
 
         header {
@@ -45,12 +44,13 @@
 
         .app-info {
             flex: 1;
+            min-width: 0;
         }
 
         .app-card h2 {
-            margin-top: 0;
+            margin: 0 0 24px;
             font-size: 28px;
-            color: #2c3e50;
+            line-height: 1.4;
         }
 
         a {
@@ -117,10 +117,12 @@
             <h2>Sunday School Manager</h2>
             <p>Manage classes, teachers, attendance, communication, and more — designed specifically for Sunday Schools.</p>
 
-            <p><strong>Download for iOS and Android:</strong><br>
-                <span class="store-badges"><a href="https://apps.apple.com/app/sunday-school-manager/id6755734036" target="_blank" rel="noopener noreferrer" class="store-badge"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="50"></a>
-                <a href="https://play.google.com/store/apps/details?id=com.henien.ssmanager_flutter" class="store-badge google-play-badge"><img src="assets/google-play-badge.png" alt="Get it on Google Play" height="74"></a></span>
-            </p>
+            <div class="app-download"><strong>Download for iOS and Android:</strong>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/app/sunday-school-manager/id6755734036" target="_blank" rel="noopener noreferrer" class="store-badge"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="50"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.henien.ssmanager_flutter" class="store-badge google-play-badge"><img src="assets/google-play-badge.png" alt="Get it on Google Play" height="74"></a>
+                </div>
+            </div>
 
             <p><strong>Support Website:</strong><br>
                 <a href="https://phenien.github.io/ssmanager/" target="_blank" rel="noopener noreferrer">
@@ -144,10 +146,15 @@
 
         <div class="app-info">
             <h2>CopticLife</h2>
-            <p><a href="https://apps.apple.com/app/coptic-life/id6757601710" class="store-badge"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="50"></a></p>
             <p>Your spiritual companion for Coptic Orthodox Christian life, daily prayers, a liturgical calendar, and Bible reading plans.</p>
 
-            <p><strong>Website:</strong><br>
+            <div class="app-download"><strong>Download for iOS:</strong>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/app/coptic-life/id6757601710" class="store-badge"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="50"></a>
+                </div>
+            </div>
+
+            <p><strong>Support Website:</strong><br>
                 <a href="https://phenien.github.io/copticlife/" target="_blank" rel="noopener noreferrer">
                     https://phenien.github.io/copticlife/
                 </a>
@@ -169,8 +176,13 @@
 
         <div class="app-info">
             <h2>Confession Manager</h2>
-            <p><a href="https://apps.apple.com/app/confession-manager/id6755344059" class="store-badge"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="50"></a></p>
             <p>Faithfully organised, securely protected. Manage confession schedules and spiritual guidance for your community.</p>
+
+            <div class="app-download"><strong>Download for iOS:</strong>
+                <div class="store-badges">
+                    <a href="https://apps.apple.com/app/confession-manager/id6755344059" class="store-badge"><img src="assets/app-store-badge.svg" alt="Download on the App Store" height="50"></a>
+                </div>
+            </div>
 
             <p><strong>Support Website:</strong><br>
                 <a href="https://phenien.github.io/confessionmanager/" target="_blank" rel="noopener noreferrer">
